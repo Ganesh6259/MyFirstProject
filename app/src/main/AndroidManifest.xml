@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".OtpActivity" />
+        <activity android:name=".NameSetupActivity" />
+        <activity android:name=".PersonalDetailsActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ProfileSetupActivity" />
+        <activity android:name=".ViewProfileActivity" />
+        <activity android:name=".RestaurantDashboardActivity" />
+        <activity android:name=".OrphanageDashboardActivity" />
+        <activity android:name=".DonorDashboardActivity" />
+        <activity android:name=".NeedyDashboardActivity" />
+        <activity android:name=".DeliveryDashboardActivity" />
+        <activity android:name=".PostFoodActivity" />
+        <activity android:name=".RequestFoodActivity" />
+    </application>
+
+</manifest>
