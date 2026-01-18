@@ -128,7 +128,7 @@ class LoginActivity : AppCompatActivity() {
 
     private fun showLanguageMenu(view: View) {
         val popup = PopupMenu(this, view)
-        popup.menu.add(0, 1, 0, "Tamil (Default)")
+        popup.menu.add(0, 1, 0, "Tamil")
         popup.menu.add(0, 2, 1, "Hindi")
         popup.menu.add(0, 3, 2, "Spanish")
         popup.menu.add(0, 4, 3, "English")

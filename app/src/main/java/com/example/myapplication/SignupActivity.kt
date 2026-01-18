@@ -107,7 +107,7 @@ class SignupActivity : AppCompatActivity() {
 
     private fun showLanguageMenu(view: View) {
         val popup = PopupMenu(this, view)
-        popup.menu.add(0, 1, 0, "Tamil (Default)")
+        popup.menu.add(0, 1, 0, "Tamil")
         popup.menu.add(0, 2, 1, "Hindi")
         popup.menu.add(0, 3, 2, "Spanish")
         popup.menu.add(0, 4, 3, "English")
@@ -146,7 +146,9 @@ class SignupActivity : AppCompatActivity() {
                 val newAccount = UserAccount(email = email, password = pass)
                 FoodRepository.accounts.add(newAccount)
                 FoodRepository.currentAccount = newAccount
-                startActivity(Intent(this, MainActivity::class.java))
+                
+                // Navigate to NameSetupActivity instead of MainActivity
+                startActivity(Intent(this, NameSetupActivity::class.java))
                 finish()
             }
         } else {
